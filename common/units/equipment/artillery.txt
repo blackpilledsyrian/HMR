@@ -259,11 +259,11 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 4
+		defense = 4
+		breakthrough = 20
 
 		#Offensive Abilities
-		soft_attack = 26
+		soft_attack = 40
 		hard_attack = 1
 		ap_attack = 5
 		air_attack = 0
@@ -295,8 +295,8 @@ equipments = {
 		visual_level = 1
 
 		defense = 8
-		breakthrough = 6
-		soft_attack = 30
+		breakthrough = 30
+		soft_attack = 50
 		hard_attack = 1
 		
 		build_cost_ic = 28.5
@@ -311,8 +311,8 @@ equipments = {
 		visual_level = 2
 		
 		defense = 10
-		breakthrough = 8
-		soft_attack = 34
+		breakthrough = 40
+		soft_attack = 60
 		hard_attack = 1
 		
 		build_cost_ic = 31
@@ -327,8 +327,8 @@ equipments = {
 		visual_level = 2
 		
 		defense = 12
-		breakthrough = 10
-		soft_attack = 40
+		breakthrough = 50
+		soft_attack = 70
 		hard_attack = 1
 		
 		build_cost_ic = 33.5

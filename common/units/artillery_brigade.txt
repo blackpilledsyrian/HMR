@@ -26,7 +26,7 @@ sub_units = {
 
 		manpower = 500
 		need = {
-			artillery_equipment = 12
+			artillery_equipment = 20
 			horse_equipment = 20
 		}
 		
@@ -121,7 +121,7 @@ sub_units = {
 		transport = motorized_equipment
 		manpower = 500
 		need = {
-			artillery_equipment = 12
+			artillery_equipment = 20
 			motorized_equipment = 15
 		}
 		
@@ -215,7 +215,7 @@ sub_units = {
 
 		manpower = 500
 		need = {
-			pack_artillery_equipment = 12
+			pack_artillery_equipment = 20
 		}
 		
 		max_strength = -1
@@ -230,7 +230,7 @@ sub_units = {
 		supply_consumption_factor = 0.03
 
 		forest = {
-			attack = 0.05
+			attack = 0.075
 		}
 
 		hills = {
@@ -288,13 +288,13 @@ sub_units = {
 		}
 
 		combat_width = 1
-		manpower = 500
+		manpower = 3000
 		need = {
-			heavy_artillery_equipment = 12
+			heavy_artillery_equipment = 20
 			horse_equipment = 35
 		}
 		
-		max_strength = -1
+		max_strength = -20
 		max_organisation = -2
 		default_morale = 0.1
 		training_time = 120
@@ -384,11 +384,11 @@ sub_units = {
 		transport = motorized_equipment
 		manpower = 500
 		need = {
-			heavy_artillery_equipment = 12
+			heavy_artillery_equipment = 20
 			motorized_equipment = 20
 		}
 		
-		max_strength = -1
+		max_strength = -20
 		max_organisation = -2
 		default_morale = 0.1
 		training_time = 120
@@ -481,7 +481,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			rocket_artillery_equipment = 12
+			rocket_artillery_equipment = 20
 			horse_equipment = 20
 		}
 		
@@ -572,7 +572,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			motorized_rocket_equipment = 12
+			motorized_rocket_equipment = 20
 		}
 		
 		manpower = 500
@@ -656,7 +656,7 @@ sub_units = {
 
 
 		need = {
-			siege_artillery_equipment = 4
+			siege_artillery_equipment = 6
 			motorized_equipment = 50
 		}
 		
