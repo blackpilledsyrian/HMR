@@ -1,0 +1,262 @@
+technologies = {
+	juggle_infantry = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_infantry = 0
+                }
+            }
+        }
+        folder = {
+            name = infantry_folder
+            position = { x = 10 y = 6 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_support = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_supports = 0
+                }
+            }
+        }
+        folder = {
+            name = support_folder
+            position = { x = 2 y = 11 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_ger_armour = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_ger_armour = 0
+                }
+            }
+        }
+        folder = {
+            name = ger_armour_folder
+            position = { x = 7 y = 14 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_sov_armour = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_sov_armour = 0
+                }
+            }
+        }
+        folder = {
+            name = sov_armour_folder
+            position = { x = 7 y = 14 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	juggle_eng_armour = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_eng_armour = 0
+                }
+            }
+        }
+        folder = {
+            name = eng_armour_folder
+            position = { x = 7 y = 16 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_usa_armour = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_usa_armour = 0
+                }
+            }
+        }
+        folder = {
+            name = usa_armour_folder
+            position = { x = 12 y = 10 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_nsb_armour = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_nsb_armour = 0
+                }
+            }
+        }
+        folder = {
+            name = nsb_armour_folder
+            position = { x = 8 y = 12 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_artillery = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_artillery = 0
+                }
+            }
+        }
+        folder = {
+            name = artillery_folder
+            position = { x = 7 y = 9 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	
+	juggle_naval = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_naval= 0
+                }
+            }
+        }
+        folder = {
+            name = naval_folder
+            position = { x = 4 y = 10 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_mtgnaval = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_mtgnaval = 0
+                }
+            }
+        }
+        folder = {
+            name = mtgnaval_folder
+            position = { x = 0 y = 6 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	juggle_air = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_air = 0
+                }
+            }
+        }
+        folder = {
+            name = air_techs_folder
+            position = { x = 3 y = 12 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_electronics = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_electronics = 0
+                }
+            }
+        }
+        folder = {
+            name = electronics_folder
+            position = { x = 6 y = 6 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+	juggle_industry = {
+		research_cost = 0
+        start_year = 1936
+        on_research_complete = {
+            hidden_effect = {
+                set_technology = {
+                    juggle_industry = 0
+                }
+            }
+        }
+        folder = {
+            name = industry_folder
+            position = { x = 6 y = 6 }
+        }
+		categories = {}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	
+}

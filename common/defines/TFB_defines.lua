@@ -1,7 +1,7 @@
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 60				-- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60				-- Days of client lag for pause of gamespeed.
-NDefines.NGame.GAME_SPEED_SECONDS = { 1, 0.3, 0.17, 0.04, 0.00 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.3, 0.17, 0.1, 0.00 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
@@ -28,7 +28,7 @@ NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE	= 300			-- extra bonus when d
 NDefines.NDiplomacy.VICTORY_POINT_WORTH_FACTOR_WARSCORE = 0.5		-- multiplier for each victory points when calculating province worth for warscore
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
-NDefines.NCountry.BASE_RESEARCH_SLOTS = 4						-- Base number of research slots per country.
+NDefines.NCountry.BASE_RESEARCH_SLOTS = 3						-- Base number of research slots per country.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0.0						-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.15				-- Default stability war factor
 NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.20	-- Default stability rulling party popularity factor
@@ -107,7 +107,8 @@ NDefines.NProduction.BASE_FACTORY_SPEED = 4.5 				-- Base factory speed multipli
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
+NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 20								-- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.MAX_MIL_FACTORIES_VISIBLE_FOR_MIL_EQUIPMENT_LINE = 200
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.75	-- How much fuel will be transferred on annexation
 NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
@@ -235,7 +236,7 @@ NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 0.8		   -- percentage of equ
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0       -- percentage of manpower returned when an encircled unit is disbanded
 NDefines.NMilitary.LOW_ORG_FOR_ATTACK = 0.5                      -- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
 NDefines.NMilitary.PLANNING_DECAY = 0.025
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.115				-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.05				-- Amount of planning lost due to player manual order
 NDefines.NMilitary.PLANNING_MAX = 0.2                           	-- can get more from techs
 NDefines.NMilitary.CIVILWAR_ORGANIZATION_FACTOR = 0.4			  	-- Multiplier of org for both sides when civilwar.	
 NDefines.NMilitary.PLAN_MIN_AUTOMATED_EMPTY_POCKET_SIZE = 5		-- The battle plan system will only automatically attack provinces in pockets that has no resistance and are no bigger than these many provinces

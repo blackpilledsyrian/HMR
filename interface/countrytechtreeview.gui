@@ -536,6 +536,12 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "juggle_infantry_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			# gridboxtype = {
 			# 	name = "tech_special_forces_tree"
@@ -701,6 +707,13 @@ guiTypes = {
 			gridboxtype = {
 				name = "basic_train_tree"
 				position = { x = 100 y = 1180 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			
+			gridboxtype = {
+				name = "juggle_support_tree"
+				position = { x=10 y=10 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -1409,7 +1422,15 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "juggle_ger_armour_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
 		}
+		
 		
 		containerWindowType = {
 			name = "sov_armour_folder"
@@ -1802,6 +1823,12 @@ guiTypes = {
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
+			}
+			gridboxtype = {
+				name = "juggle_sov_armour_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
 			}
 		}
 		
@@ -2223,6 +2250,12 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "juggle_eng_armour_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 		
 		containerWindowType = {
@@ -2627,6 +2660,12 @@ guiTypes = {
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
+			}
+			gridboxtype = {
+				name = "juggle_usa_armour_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
 			}
 		}
 
@@ -3056,6 +3095,12 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "juggle_nsb_armour_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 
 		containerWindowType = {
@@ -3418,6 +3463,12 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "juggle_artillery_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 
 		containerWindowType = {
@@ -3708,6 +3759,12 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			gridboxtype = {
+				name = "juggle_naval_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 
 		containerWindowType = {
@@ -3919,6 +3976,12 @@ guiTypes = {
 				name = "early_ship_hull_submarine_tree"
 				position = { x = 70 y = 1025 }
 				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "juggle_mtgnaval"
+				position = { x=10 y=10 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -4189,6 +4252,8 @@ guiTypes = {
 			# 	slotsize = { width = 70 height = 70 }
 			# 	format = "LEFT"
 			# }
+			
+			
 
 		}
 
@@ -4584,6 +4649,13 @@ guiTypes = {
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
+			}
+			
+		   gridboxtype = {
+				name = "juggle_air_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
 			}
 		}
 
@@ -5230,6 +5302,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			
+				gridboxtype = {
+				name = "juggle_industry_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			iconType = {
 				name = "highlight_industry_2"
@@ -5692,6 +5771,13 @@ guiTypes = {
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+			}
+			
+			gridboxtype = {
+				name = "juggle_electronics_tree"
+				position = { x=10 y=10 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
 			}
 
 		}

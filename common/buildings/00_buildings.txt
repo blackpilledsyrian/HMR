@@ -359,14 +359,14 @@ buildings = {
 	
 	steel_refinery = {
 		show_on_map = 1
-		base_cost = 12000
+		base_cost = 10000
 		#base_cost = 14000
 		#per_level_extra_cost = -2000
 		icon_frame = 29
 		local_resources_steel = 100
-		local_resources_aluminium = 10
-        local_resources_chromium = 5
-        local_resources_tungsten = 5
+		local_resources_aluminium = 40
+        local_resources_chromium = 20
+        local_resources_tungsten = 20
 		refinery = yes
 
 		level_cap = {

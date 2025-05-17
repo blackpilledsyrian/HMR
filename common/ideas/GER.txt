@@ -2185,6 +2185,29 @@ ideas = {
 				trade_opinion_factor = 0.25
 			}
 		}
+		
+		
+		GER_long_term_rearmament = {
+		 	name = GER_long_term_rearmament
+		 
+		 	allowed = {
+		 		original_tag = GER
+		 		always = no
+		 	}
+
+		 	allowed_civil_war = {
+		 		always = yes
+		 	}
+		 	
+		 	removal_cost = -1
+
+		 	picture = man_five_year_plan_industry
+
+		 	modifier = {
+		 		production_speed_industrial_complex_factor = 0.40
+				production_speed_arms_factory_factor = -0.10
+		 	}
+		 }
 
 		GER_fortify_the_vaterland_idea = {
 		 	name = GER_fortify_the_vaterland_cat
@@ -6387,7 +6410,7 @@ ideas = {
 				# PP Cost
 				political_power_gain = -0.1
 
-				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
 				fascism_drift = 0.01
 			}
 		}
@@ -6459,15 +6482,15 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.075
+					build_cost_ic = -0.15
 				}
 				jet_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.075
+					build_cost_ic = -0.15
 				}
 				heavy_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.075
+					build_cost_ic = -0.15
 				}
 			}
 		}
