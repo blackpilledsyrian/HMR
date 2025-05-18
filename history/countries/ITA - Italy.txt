@@ -17,6 +17,7 @@ IF = {
 	}
 }
 
+
 set_variable = { dockyard_major = 1 }
 #set_variable = { ITA_poster_center_icon_frame = 1 }
 set_variable = { ITA_new_propaganda_campaign = 0 } #Used to pick a poster slot

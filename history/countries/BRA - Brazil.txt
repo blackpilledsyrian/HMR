@@ -7,6 +7,7 @@ every_core_state = {
 		add_to_array = { cores_at_game_start = PREV }
 	}
 }
+add_ideas = peacetime_training_idea
 # IF = {
 # 	limit = { has_dlc = "By Blood Alone" }
 # 		set_air_oob = "BRA_1936_air_bba"

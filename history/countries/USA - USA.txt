@@ -30,6 +30,8 @@ if = {
 # 	}
 # }
 
+add_ideas = peacetime_training_idea
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"

@@ -17,6 +17,9 @@ add_breakthrough_progress = {
 	value = 0.3
 }
 
+add_ideas = peacetime_training_idea
+
+
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 

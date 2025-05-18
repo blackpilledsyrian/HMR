@@ -9,6 +9,8 @@ if = {
 	}
 }
 
+add_ideas = peacetime_training_idea
+
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"

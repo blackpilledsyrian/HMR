@@ -46,7 +46,7 @@ ideas = {
 			}
 		}
 	
-	
+	   
 		CHI_ai_boost = {
 
 			allowed = {
@@ -69,7 +69,10 @@ ideas = {
 				industrial_capacity_factory = 0.3
 			}
 		}
-
+         
+		
+		
+		
 		continuous_naval_production = {
 			allowed = {
 				always = no
@@ -1587,6 +1590,21 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.025
+			}
+		}
+		
+		peacetime_training_idea = { 
+			picture = generic_morale_bonus
+			allowed = { always = no }
+			available = { has_war = no  }
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_unit_factor = 5
+				training_time_factor = -0.45
+				truck_attrition_factor = -1
+				air_training_xp_gain_factor = 3
+			    experience_gain_army = 0.22
+
 			}
 		}
 	}

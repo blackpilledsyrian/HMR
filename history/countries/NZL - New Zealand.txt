@@ -39,7 +39,7 @@ if = {
 		mtg_transport = 1
 	}
 }
-
+add_ideas = peacetime_training_idea
 set_variable = { number_of_mios = 0 }
 
 if = {

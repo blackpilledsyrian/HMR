@@ -15,6 +15,9 @@ IF = {
 	}
 }
 
+add_ideas = peacetime_training_idea
+
+
 # IF = {
 # 	limit = { has_dlc = "By Blood Alone" }
 # 		set_air_oob = "HUN_1936_air_bba"

@@ -22,6 +22,7 @@ set_technology = {
 	support_weapons = 1
 	basic_train = 1
 }
+add_ideas = peacetime_training_idea
 
 set_convoys = 50
 
