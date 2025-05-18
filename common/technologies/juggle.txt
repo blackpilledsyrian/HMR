@@ -25,7 +25,7 @@ technologies = {
         on_research_complete = {
             hidden_effect = {
                 set_technology = {
-                    juggle_supports = 0
+                    juggle_support = 0
                 }
             }
         }

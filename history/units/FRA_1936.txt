@@ -1057,14 +1057,14 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-	add_equipment_to_stockpile = {
+	add_equipment_to_`pile = {
 		type = infantry_equipment_0
-		amount = 6000
+		amount = 20000
 		producer = FRA
 	}
 	add_equipment_to_stockpile = {
 		type = squad_equipment_0
-		amount = 500
+		amount = 3000
 		producer = FRA
 	}
 	add_equipment_to_stockpile = {
@@ -1079,7 +1079,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-		amount = 2000
+		amount = 10000
 		producer = FRA
 	}
 	add_equipment_to_stockpile = {

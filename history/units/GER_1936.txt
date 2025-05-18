@@ -912,6 +912,17 @@ instant_effect = {
 		amount = 1000
 		producer = "GER"
 	}
+
+     add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 20000
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = squad_equipment_0
+		amount = 4000
+		producer = GER
+	}
 	
 	add_equipment_production = {
 		equipment = {

@@ -832,4 +832,20 @@ instant_effect = {
 		amount = 100
 		producer = JAP
 	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 20000
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = squad_equipment_0
+		amount = 4000
+		producer = JAP
+	}
+	
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+		amount = 13000
+		producer = JAP
+	}
 }
