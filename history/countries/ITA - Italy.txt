@@ -17,6 +17,8 @@ IF = {
 	}
 }
 
+add_timed_idea={ idea = SCW_volunteers_idea days= 750 }
+
 
 set_variable = { dockyard_major = 1 }
 #set_variable = { ITA_poster_center_icon_frame = 1 }

@@ -10,6 +10,7 @@ if = {
 }
 
 add_ideas = peacetime_training_idea
+add_timed_idea={ idea = SCW_volunteers_idea days= 750 }
 
 IF = {
 	limit = {

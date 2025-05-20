@@ -10,6 +10,9 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
+
+add_ideas = peacetime_training_idea
+
 set_variable = { axis_poster_center_icon_frame = 1 }
 add_ideas = idea_SIA_army_of_siam
 # Starting tech

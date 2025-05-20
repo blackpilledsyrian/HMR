@@ -1593,6 +1593,20 @@ ideas = {
 			}
 		}
 		
+		SCW_volunteers_idea = {
+		   removal_cost = -1
+	       allowed = { always = no }
+		   picture = generic_volunteer_expedition_bonus
+		   modifier = {
+		   
+             
+		     send_volunteer_divisions_required = -1
+		     send_volunteer_size = 5
+			 
+		   }
+		  
+		}
+		
 		peacetime_training_idea = { 
 			picture = generic_morale_bonus
 			allowed = { always = no }

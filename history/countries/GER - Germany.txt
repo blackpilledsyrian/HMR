@@ -18,6 +18,7 @@ add_breakthrough_progress = {
 }
 
 add_ideas = peacetime_training_idea
+add_timed_idea={ idea = SCW_volunteers_idea days= 750 }
 
 
 starting_train_buffer = 2

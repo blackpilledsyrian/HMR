@@ -22,6 +22,8 @@ add_ideas = {
 	JAP_gekokoju
 	JAP_island_hopping8
 }
+add_timed_idea={ idea = SCW_volunteers_idea days= 420 }
+
 
 # if = {
 # 	limit = { has_dlc = "Waking the Tiger" }
