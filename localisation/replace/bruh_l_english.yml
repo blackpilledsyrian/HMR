@@ -67,6 +67,7 @@
  generic_mio_mountain_gun:0 "Mountain Gun"
  peacetime_training_idea:0 "Peacetime Training"
  SCW_volunteers_idea:0 "Volunteer Corps Capabilities"
+ SCW_volunteers_minor_idea:0 "Minor Volunteer Corps Capabilities"
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
@@ -263,6 +264,7 @@
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
  rail_way_plural:0 "Railways"
+ HMR_superindustrial_zone:0 "Colonial Industrialization"
 
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"

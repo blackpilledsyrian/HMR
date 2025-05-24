@@ -24,6 +24,7 @@ set_technology = {
 	early_fighter = 1
 }
 
+set_rule = { can_send_volunteers = yes }
 
 set_stability = 0.6
 set_war_support = 0.1
@@ -52,6 +53,8 @@ set_technology = {
 }
 
 add_ideas = peacetime_training_idea
+add_timed_idea = {idea = SCW_volunteers_minor_idea days= 750}
+
 
 recruit_character = RAJ_lord_linlithgow
 recruit_character = RAJ_v_d_savarkar

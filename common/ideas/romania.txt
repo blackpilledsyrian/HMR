@@ -17,7 +17,6 @@ ideas = {
 			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
-				industrial_capacity_factory = -0.10
 				consumer_goods_factor = -0.06
 			}
 		}

@@ -16,7 +16,9 @@ IF = {
 }
 
 add_ideas = peacetime_training_idea
+add_timed_idea = {idea = SCW_volunteers_minor_idea days= 750}
 
+set_rule = { can_send_volunteers = yes }
 
 # IF = {
 # 	limit = { has_dlc = "By Blood Alone" }
@@ -62,7 +64,7 @@ IF = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 5
 
 ### SETUP STABILITY AND WAR SUPPORT ###
 IF = {

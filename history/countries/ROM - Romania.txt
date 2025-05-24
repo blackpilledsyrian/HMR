@@ -23,8 +23,13 @@ if = {
 		}
 # 	}
 # }
+
 add_ideas = peacetime_training_idea
-set_research_slots = 4
+add_timed_idea = {idea = SCW_volunteers_minor_idea days= 750}
+
+set_rule = { can_send_volunteers = yes }
+
+set_research_slots = 5
 set_stability = 0.6
 set_war_support = 0.4
 

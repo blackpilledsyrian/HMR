@@ -1607,6 +1607,22 @@ ideas = {
 		  
 		}
 		
+		SCW_volunteers_minor_idea = {
+		   removal_cost = -1
+	       allowed = { always = no }
+		   picture = generic_volunteer_expedition_bonus
+		   modifier = {
+		   
+             
+		     send_volunteer_divisions_required = -1
+			 send_volunteers_tension = -0.6
+		     send_volunteer_size = 1
+			 
+			 
+		   }
+		  
+		}
+		
 		peacetime_training_idea = { 
 			picture = generic_morale_bonus
 			allowed = { always = no }
@@ -1617,7 +1633,7 @@ ideas = {
 				training_time_factor = -0.45
 				truck_attrition_factor = -1
 				air_training_xp_gain_factor = 3
-			    experience_gain_army = 0.22
+			    experience_gain_army = 0.18
 
 			}
 		}

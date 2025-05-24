@@ -16,7 +16,7 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 add_ideas = peacetime_training_idea
-add_timed_idea={ idea = SCW_volunteers_idea days= 1095 }
+add_timed_idea={ idea = SCW_volunteers_idea days= 720 }
 
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
@@ -728,7 +728,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.4
 set_war_support = 0.45
 

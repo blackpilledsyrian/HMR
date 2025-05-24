@@ -874,7 +874,20 @@ focus_tree = {
 					province = 1149
 					instant_build = yes
 				}
+				
+				add_core_of = ITA
+				
+				add_dynamic_modifier = {
+				modifier = HMR_superindustrial_zone
+			    }
+				
+			    set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			    }
 			}
+			
 			450 = {
 				add_building_construction = {
 					type = naval_base
@@ -882,6 +895,14 @@ focus_tree = {
 					province = 11954
 					instant_build = yes
 				}
+				add_core_of = ITA
+				
+				
+			  set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			    }
 			}
 			451 = {
 				add_building_construction = {

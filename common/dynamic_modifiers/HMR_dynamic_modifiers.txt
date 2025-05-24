@@ -1,0 +1,6 @@
+HMR_superindustrial_zone = {
+	icon = GFX_ITA_africa
+
+	local_factories	= 0.5
+	state_production_speed_buildings_factor = -0.5
+}

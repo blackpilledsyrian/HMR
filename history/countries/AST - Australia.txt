@@ -20,6 +20,7 @@ set_technology = {
 	fleet_in_being = 1
 }
 add_ideas = peacetime_training_idea
+add_timed_idea = {idea = SCW_volunteers_minor_idea days= 750}
 
 if = {
 	limit = {
@@ -82,6 +83,8 @@ if = {
 # }
 
 set_variable = { number_of_mios = 0 }
+
+set_rule = { can_send_volunteers = yes }
 
 recruit_character = AST_john_curtin
 recruit_character = AST_eric_campbell
