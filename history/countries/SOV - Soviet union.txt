@@ -17,7 +17,7 @@ set_party_name = {
 }
 add_ideas = peacetime_training_idea
 add_timed_idea={ idea = SCW_volunteers_idea days= 720 }
-
+add_ideas = Collectivization
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
@@ -28,6 +28,7 @@ if = {
 	recruit_character = SOV_provisional_government # United Exiles
 	set_country_flag = vlasov_owner_flag
 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 #POLITICAL ADVISORS
 recruit_character = SOV_mikhail_kalinin

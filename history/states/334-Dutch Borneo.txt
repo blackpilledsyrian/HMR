@@ -11,7 +11,7 @@ state= {
 
 	history= {
 		owner = AST
-		add_core_of = AST
+		add_core_of = HOL
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		victory_points = {
 			10237 3 

@@ -20,6 +20,7 @@ add_ideas = {
 }
 
 set_variable = { mon_poster_center_icon_frame = 1 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 set_convoys = 100
 

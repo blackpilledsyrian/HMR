@@ -8,6 +8,8 @@ every_core_state = {
 	}
 }
 add_ideas = peacetime_training_idea
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
+
 # IF = {
 # 	limit = { has_dlc = "By Blood Alone" }
 # 		set_air_oob = "BRA_1936_air_bba"

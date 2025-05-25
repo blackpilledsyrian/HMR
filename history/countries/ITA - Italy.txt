@@ -18,6 +18,7 @@ IF = {
 }
 
 
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 set_variable = { dockyard_major = 1 }
 #set_variable = { ITA_poster_center_icon_frame = 1 }

@@ -364,7 +364,15 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
-	
+		
+        DayOne_Efficiency = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 100.0
+			}
+		}
+
 	
 		german_cooperation_focus = {
 			
@@ -2090,6 +2098,7 @@ ideas = {
 			traits = { electronics_concern }
 		}
 	}
+	
 
 	materiel_manufacturer = {
 	
@@ -2220,3 +2229,4 @@ ideas = {
 	}
 
 }
+

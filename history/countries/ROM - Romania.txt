@@ -48,6 +48,7 @@ set_technology = {
 	basic_train = 1
 	fra_light_tank_export = 1
 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 
 if = {

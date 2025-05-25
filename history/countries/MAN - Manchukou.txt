@@ -13,6 +13,7 @@ set_technology = {
 	
 }
 add_ideas = peacetime_training_idea
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 set_research_slots = 5
 

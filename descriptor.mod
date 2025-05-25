@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 }
 name="Hamza's Multiplayer Rebalanced"
-supported_version="1.16.6"
+supported_version="1.16.8"
 remote_file_id="3483348294"

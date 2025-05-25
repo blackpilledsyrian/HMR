@@ -27,6 +27,7 @@ if = {
 		give_military_access = ENG
 	}
 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 set_research_slots = 6
 

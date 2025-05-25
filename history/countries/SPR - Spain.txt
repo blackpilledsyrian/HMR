@@ -16,6 +16,7 @@ if = {
 # 		set_air_oob = "SPR_1936_air_legacy"
 # 	}
 # }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 if = {
 	limit = {

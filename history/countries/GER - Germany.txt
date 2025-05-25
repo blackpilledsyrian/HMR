@@ -25,6 +25,7 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
 add_timed_idea = { idea = GER_mefo_air days = 1340 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 # Starting tech
 set_technology = {

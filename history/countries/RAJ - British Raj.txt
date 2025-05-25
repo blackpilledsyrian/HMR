@@ -51,6 +51,7 @@ set_technology = {
 	support_weapons = 1
 	basic_train = 1
 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 add_ideas = peacetime_training_idea
 add_timed_idea = {idea = SCW_volunteers_minor_idea days= 750}

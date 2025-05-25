@@ -23,6 +23,7 @@ add_ideas = {
 	JAP_island_hopping8
 }
 add_timed_idea={ idea = SCW_volunteers_idea days= 420 }
+add_timed_idea = {idea = DayOne_Efficiency days= 7}
 
 
 # if = {
