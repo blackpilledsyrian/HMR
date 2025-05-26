@@ -167,9 +167,7 @@ technologies = {
 			armored_spearhead
 		}
 		
-		dependencies = {
-			mot_radio1 = 1
-		}
+		
 		
 		motorized = {
 			maximum_speed = 0.1
@@ -451,9 +449,7 @@ technologies = {
 			recon = 1
 		}
 
-		dependencies = {
-			mot_radio2 = 1
-		}
+	
 		
 		category_all_armor = {
 			max_organisation = 2
@@ -1328,9 +1324,7 @@ technologies = {
 	
 	intergrated_support = { 
 	
-		dependencies = {
-			art_radio1 = 1
-		}
+	
 	
 		xor={
 			dispersed_support
@@ -1443,9 +1437,6 @@ technologies = {
 	
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 	
-		dependencies = {
-			art_radio1 = 1
-		}
 		
 		xor = {
 			intergrated_support
@@ -2482,9 +2473,7 @@ technologies = {
 	
 	grand_mechanized_offensive = {
 
-		dependencies = {
-			inf_radio1 = 1
-		}
+		
 	
 		xor = {
 			infantry_offensive
@@ -2921,9 +2910,7 @@ technologies = {
 	
 	infantry_offensive = {
 
-		dependencies = {
-			inf_radio1 = 1
-		}
+		
 	
 		xor = {
 			grand_mechanized_offensive

@@ -55,6 +55,10 @@ sub_units = {
 			squad_equipment = 10
 			horse_equipment = 30
 		}
+		essential = {
+			radio_equipment
+        }
+		
 	}
 
 	infantry_mot = {
@@ -108,6 +112,10 @@ sub_units = {
 			squad_equipment = 10
 			motorized_equipment = 16
 		}
+		   essential = {
+            motorized_equipment
+			radio_equipment
+        }
 	}
 	
 	garrison = {
@@ -121,6 +129,7 @@ sub_units = {
 		type = {
 			infantry
 		}
+		
 		
 		group = infantry
 		
@@ -162,6 +171,9 @@ sub_units = {
 			squad_equipment = 10
 			horse_equipment = 10
 		}
+		essential = {
+			radio_equipment
+        }
 		
 	}
 	
@@ -213,6 +225,9 @@ sub_units = {
 			infantry_equipment = 60
 			horse_equipment = 5
 		}
+		essential = {
+			radio_equipment
+        }
 	}
 	
 	marine = {
@@ -268,6 +283,9 @@ sub_units = {
 			sf_equipment = 35
 			horse_equipment = 20
 		}
+		essential = {
+			radio_equipment
+        }
 
 		essential = {
 			sf_equipment
@@ -318,7 +336,9 @@ sub_units = {
 		type = {
 			infantry
 		}
-		
+		essential = {
+			radio_equipment
+        }
 		group = infantry
 		
 		categories = {
@@ -357,6 +377,9 @@ sub_units = {
 			sf_equipment = 35
 			horse_equipment = 20
 		}
+		essential = {
+			radio_equipment
+        }
 
 		essential = {
 			sf_equipment
@@ -407,6 +430,7 @@ sub_units = {
 			infantry
 		}
 		
+		
 		group = infantry
 		
 		categories = {
@@ -445,6 +469,9 @@ sub_units = {
 			sf_equipment = 30
 			horse_equipment = 20
 		}
+		essential = {
+			radio_equipment
+        }
 
 		essential = {
 			sf_equipment
@@ -532,6 +559,9 @@ sub_units = {
 			sf_equipment = 40
 			squad_equipment = 25
 		}
+		essential = {
+			radio_equipment
+        }
 
 		essential = {
 			sf_equipment
@@ -603,6 +633,10 @@ sub_units = {
 			motorized_equipment = 80
 			squad_equipment = 30
 		}
+		essential = {
+			radio_equipment
+			motorized_equipment
+        }
 
 		forest = {
 			attack = -0.1
@@ -678,6 +712,7 @@ sub_units = {
 		essential = {
 			infantry_equipment
 			mechanized_equipment
+			radio_equipment
 		}
 
 		# this is what moves us and sets speed
@@ -725,6 +760,10 @@ sub_units = {
 		}
 		
 		group = infantry
+		
+		essential = {
+			radio_equipment
+        }
 		
 		categories = {
 			category_front_line
@@ -866,6 +905,9 @@ sub_units = {
 		hard_attack = -0.25
 		soft_attack = 0.15
 		
+		essential = {
+			radio_equipment
+        }
 		
 		transport =	infantry_equipment
 		
@@ -1026,7 +1068,9 @@ sub_units = {
 			category_all_infantry
 			category_army
 		}
-		
+		essential = {
+			radio_equipment
+        }
 		combat_width = 2
 		
 		#Size Definitions
