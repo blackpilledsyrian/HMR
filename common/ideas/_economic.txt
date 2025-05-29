@@ -1176,12 +1176,14 @@ ideas = {
 		Collectivization = {
 
 			available = {
-				has_government = communism
+				OR = {
+					original_tag = SOV 
+					original_tag = MON
+				}
 			}
 
 			cost = 150
 			removal_cost = -1
-
 
 			modifier = {
 				min_export = 0.1
@@ -1189,6 +1191,10 @@ ideas = {
 				industrial_capacity_factory = 0.06
 				production_speed_buildings_factor = 0.1
 			    
+			}
+
+			allowed_to_remove = {
+				NOT = { has_government = communism }
 			}
 
 			cancel_if_invalid = no
