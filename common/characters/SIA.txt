@@ -264,7 +264,7 @@ characters={
 				original_tag  = SIA
 			}
 			traits  = {
-				ideological_crusader 
+				financial_expert 
 			}
 		}
 		name="Thawee Punyaketu"

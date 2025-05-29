@@ -1051,7 +1051,7 @@ JAP_public_awareness_of_war_ns = {
 				war_support_factor = 0.1
 				mobilization_laws_cost_factor = -0.15
 				justify_war_goal_time = -0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.3
 			}
 		}
 

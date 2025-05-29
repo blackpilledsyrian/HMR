@@ -3321,7 +3321,7 @@
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = JAP_break_mitsui_idea days = 500 }
+			add_timed_idea = { idea = JAP_break_mitsui_idea days = 1095 }
 		}
 	}
 	
@@ -3378,7 +3378,7 @@
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = JAP_break_mitsubishi_idea days = 500 }
+			add_timed_idea = { idea = JAP_break_mitsubishi_idea days = 1095 }
 		}
 	}
 	
@@ -4118,8 +4118,6 @@
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_mitsubishi_organization
 				mio:JAP_mitsubishi_organization = {
 					add_mio_funds = 1500
 				}

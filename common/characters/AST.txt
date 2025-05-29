@@ -428,7 +428,7 @@ characters={
 				}
 			}
 			traits  = {
-				democratic_reformer 
+				captain_of_industry 
 			}
 			do_effect  = {
 				not  = {
