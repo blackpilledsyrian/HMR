@@ -5634,7 +5634,6 @@
 
 		completion_reward = {
 			add_ideas = SOV_collectivist_propaganda
-			add_political_power = 120
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
