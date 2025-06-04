@@ -12,6 +12,8 @@ characters = {
 	####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
 																													
   
+	  
+
 	  SOV_iosif_stalin = {
 		  name = SOV_iosif_stalin
 		  portraits = {
@@ -179,28 +181,48 @@ characters = {
 		  }
   
 		  advisor = {
-			  cost = 150
-			  slot = theorist
-			  idea_token = georgy_zhukov
-			  ledger = army
+			  can_be_fired = no
+			  slot = army_chief
+			  idea_token = georgy_zhukov_hotu
 			  allowed = {
-				  original_tag = SOV
-			  }
+				
+			  			}		
 			  available = {
-				  has_completed_focus = SOV_zhukov
+				  
+				  has_completed_focus = SOV_cope50
+			  
+				  }
 				  if = {
 					  limit = {
 						  has_character_flag = SOV_exiled_flag
 					  }
 					  NOT = { has_character_flag = SOV_exiled_flag }
 				  }
-			  }
+			  
 			  traits = {
-				  mass_assault_expert
+				  zhukov_hotu
+			  }
+			  ai_will_do = {
+				  factor = 1.000
 			  }
 		  }		
 	  }
   
+	  SOV_georgy_zhukov_hotu = {
+		  name = SOV_georgy_zhukov_hotu
+  
+		  portraits = {
+			  army = {
+				  small = "GFX_idea_georgy_zhukov"
+				  large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			  }
+		  }
+
+		  
+  
+		  		
+	  }
+
 	  SOV_konstantin_rokossovsky = {
 		  name = SOV_konstantin_rokossovsky
   
@@ -416,6 +438,7 @@ characters = {
 			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		  }
 	  }
+
   
 	  SOV_semyon_timoshenko = {
 		  name = SOV_semyon_timoshenko
@@ -425,21 +448,18 @@ characters = {
 				  large = "gfx/leaders/SOV/Portrait_Soviet_Semyon_Timoshenko.dds"
 			  }
 		  }
-		  advisor = {
+		  
+		  	advisor = {
+			  can_be_fired = no
 			  slot = army_chief
 			  idea_token = semyon_timoshenko
 			  allowed = {
-				  original_tag = SOV
-			  }
+				
+			  			}		
 			  available = {
-				  hidden_trigger = {
-					  NOT = {
-						  any_other_country = {
-							  has_war_with = SOV
-							  original_tag = SOV
-							  has_unit_leader = 404.000
-						  }
-					  }
+				  
+				  has_completed_focus = SOV_cope40
+			  
 				  }
 				  if = {
 					  limit = {
@@ -447,15 +467,16 @@ characters = {
 					  }
 					  NOT = { has_character_flag = SOV_exiled_flag }
 				  }
-			  }
+			  
 			  traits = {
-				  army_chief_reform_2
+				  timoshenko_hotu
 			  }
-				  cost = 100
 			  ai_will_do = {
 				  factor = 1.000
 			  }
 		  }
+
+
 		  corps_commander = {
 			  traits = { career_officer cavalry_officer politically_connected }
 			  skill = 3
@@ -477,21 +498,18 @@ characters = {
 				  large = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
 			  }
 		  }
+		  
 		  advisor = {
+			  can_be_fired = no
 			  slot = army_chief
 			  idea_token = kliment_voroshilov
 			  allowed = {
-				  original_tag = SOV
-			  }
+				
+			  			}		
 			  available = {
-				  hidden_trigger = {
-					  NOT = {
-						  any_other_country = {
-							  has_war_with = SOV
-							  original_tag = SOV
-							  has_unit_leader = 405.000
-						  }
-					  }
+				  
+				  has_completed_focus = SOV_cope30
+			  
 				  }
 				  if = {
 					  limit = {
@@ -499,9 +517,9 @@ characters = {
 					  }
 					  NOT = { has_character_flag = SOV_exiled_flag }
 				  }
-			  }
+			  
 			  traits = {
-				  army_chief_drill_1
+				  voroshilov_hotu
 			  }
 			  ai_will_do = {
 				  factor = 1.000
@@ -528,24 +546,31 @@ characters = {
 				  large = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
 			  }
 		  }
+
 		  advisor = {
-			  cost = 150
-			  slot = theorist
+			  can_be_fired = no
+			  slot = army_chief
 			  idea_token = mikhail_tukhachevsky
-			  ledger = army
 			  allowed = {
-				  original_tag = SOV
-			  }
+				
+			  			}		
 			  available = {
+				  
+				  has_completed_focus = SOV_cope60
+			  
+				  }
 				  if = {
 					  limit = {
 						  has_character_flag = SOV_exiled_flag
 					  }
 					  NOT = { has_character_flag = SOV_exiled_flag }
 				  }
-			  }
+			  
 			  traits = {
-				  mass_assault_expert
+				  tukhachevsky_hotu
+			  }
+			  ai_will_do = {
+				  factor = 1.000
 			  }
 		  }
   
@@ -569,6 +594,36 @@ characters = {
 				  small="gfx/interface/ideas/idea_SOV_semyon_budyonny.dds"
 			  }
 		  }
+		
+		
+		advisor = {
+			  can_be_fired = no
+			  slot = army_chief
+			  idea_token = semyon_budyonny
+			  allowed = {
+				
+			  			}		
+			  available = {
+				  
+				  has_completed_focus = SOV_cope10
+			  
+				  }
+				  if = {
+					  limit = {
+						  has_character_flag = SOV_exiled_flag
+					  }
+					  NOT = { has_character_flag = SOV_exiled_flag }
+				  }
+			  
+			  traits = {
+				  staunch_traditionalist
+			  }
+			  ai_will_do = {
+				  factor = 1.000
+			  }
+		  }
+
+
 		  field_marshal = {
 			  traits = { old_guard inflexible_strategist politically_connected }
 			  skill = 1
@@ -648,6 +703,35 @@ characters = {
 				  small="gfx/interface/ideas/idea_SOV_grigory_kulik.dds"
 			  }
 		  }
+
+		  advisor = {
+			  can_be_fired = no
+			  slot = army_chief
+			  idea_token = grigory_kulik
+			  allowed = {
+				
+			  			}		
+			  available = {
+				  
+				  has_completed_focus = SOV_cope20
+			  
+				  }
+				  if = {
+					  limit = {
+						  has_character_flag = SOV_exiled_flag
+					  }
+					  NOT = { has_character_flag = SOV_exiled_flag }
+				  }
+			  
+			  traits = {
+				  commander_of_the_artillery
+			  }
+			  ai_will_do = {
+				  factor = 1.000
+			  }
+		  }
+
+
 		  corps_commander = {
 			  traits = { old_guard inflexible_strategist career_officer politically_connected bearer_of_artillery }
 			  skill = 1
@@ -1679,29 +1763,34 @@ characters = {
 				  large = "GFX_portrait_SOV_aleksandr_yegorov"
 			  }
 		  }
+		  
 		  advisor = {
+			  can_be_fired = no
 			  slot = army_chief
-			  idea_token = SOV_aleksandr_yegorov
+			  idea_token = aleksandr_yegorov
 			  allowed = {
-				  original_tag = SOV
-			  }
+				
+			  			}		
 			  available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			  }
+				  
+				  has_completed_focus = SOV_cope70
+			  
+				  }
+				  if = {
+					  limit = {
+						  has_character_flag = SOV_exiled_flag
+					  }
+					  NOT = { has_character_flag = SOV_exiled_flag }
+				  }
+			  
 			  traits = {
-				  army_chief_defensive_2
+				  yegorov_hotu
 			  }
-			  cost = 100
 			  ai_will_do = {
 				  factor = 1.000
 			  }
 		  }
-  
+
 		  field_marshal = {
 			  traits = { career_officer inflexible_strategist trait_reckless }
 			  skill = 3
@@ -1722,28 +1811,7 @@ characters = {
 				  large = "GFX_portrait_SOV_blyukher"
 			  }
 		  }
-		  advisor = {
-			  slot = army_chief
-			  idea_token = SOV_vasily_blyukher
-			  allowed = {
-				  original_tag = SOV
-			  }
-			  available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			  traits = {
-				  army_chief_maneuver_2
-			  }
-			  cost = 100
-			  ai_will_do = {
-				  factor = 1.000
-			  }
-		  }
+		  
   
 		  field_marshal = {
 			  traits = { old_guard career_officer infantry_officer organizer }
@@ -4124,6 +4192,4 @@ characters = {
 			}
 		}
 	}
-
-
 }
