@@ -126,8 +126,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
 			}		
 
 		}
@@ -470,7 +470,7 @@ ideas = {
 			}
 		}
 		
-		MON_mobilize_steppes = {
+		MON_pan_mongolism = {
 			picture = generic_victors_of_ww1
 
 			allowed = {
@@ -484,6 +484,23 @@ ideas = {
 
 			modifier = {
 				conscription = 0.04
+			}
+		}
+		
+		MON_unite_the_steppes = {
+			picture = generic_victors_of_ww1
+
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 2500
 			}
 		}
 
@@ -512,7 +529,219 @@ ideas = {
 				breakthrough_bonus_against = -0.20
 			}
 		}
+		
+		MON_modernise_army = {
+			picture = mex_revolutionary_army
 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+			removal_cost = -1
+
+			targeted_modifier = {
+				experience_gain_army = 0.1
+			}
+		}
+		
+		MON_Morozov = {
+			picture = morozov_design_bureau
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.1
+					reliability = 0.1
+				}
+			}
+		}
+		
+		MON_OKMO = {
+			picture = okmo
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes 
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					hard_attack = 0.1
+					armor_value = 0.1
+				}
+			}
+		}
+		
+		MON_simplify_production = {
+
+			picture = generic_improved_industries
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+					reliability = -0.05
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.075 instant = yes
+					reliability = -0.05
+				}
+				squad_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					reliability = -0.05
+				}
+			}
+		}
+		
+		MON_modernised_conscription = {
+
+			picture = generic_women_in_the_army
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor	= 0.1
+			}
+		}
+		
+		MON_open_borders = {
+
+			picture = BEL_traditional_family_values
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower	= 7500
+				political_power_gain = -0.2
+			}
+		}
+		
+		MON_military_observers = {
+
+			picture = jap_intervene_in_china
+			
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = {
+					CHI = { has_war_with = JAP}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.25
+			}
+		}
+		
+		MON_army_stagnation = {
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = 1
+				experience_gain_army = -0.2
+			}
+		}
+		
+		MON_send_volunteers = {
+
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = {
+					CHI = { has_war_with = JAP}
+				}
+			}
+
+			modifier = {
+				send_volunteer_size = 4
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension = -1
+			}
+		}
+		
+		MON_full_sinicization = {
+
+			picture = chi_whampoa_military_academy
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+			}
+
+			modifier = {
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.20
+				out_of_supply_factor = -0.25
+				pocket_penalty = -0.3
+				dig_in_speed_factor = 0.5
+				army_strength_factor = 0.25
+			}
+		}
 	}
 
 }

@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
   #### FOCUSES ####
   MON_collectivisation:0 "Continue Collectivisation"
@@ -53,30 +53,10 @@
   MON_tribute_system_desc:0 "There are certain things nomads, by nature, cannot produce. Agriculture is the business of the Chinese, and thus we will leave it to them. Mongolia once subsisted off of tribute from vassals and foreign powers, and there is no reason we cannot do so again."
   MON_mobilise_nomads:0 "Mobilise the Nomads"
   MON_mobilise_nomads_desc:0 "War is near, and the Mongolian peoples shall never rest until it is won!"
-  MON_mongolia_people_army:0 "Mongolian Peoples Army"
-  MON_mongolia_people_army_desc:0 "The Mongolian Peoples Army is the newly-established Mongolian division of the Red Army, tasked with securing the interests of international communism wherever it is threatened."
-  MON_army_modernisation:0 "Army Modernisation"
-  MON_army_modernisation_desc:0 "Firearms from the Great War hardly qualify as modern munitions. If we wish to be taken seriously, we are in desperate need of some upgrades."
-  MON_new_rifles:0 "New Rifles"
-  MON_new_rifles_desc:0 "Fully-automatic weaponry is a necessity for any modern fighting force."
-  MON_new_artillery:0 "Develop Artillery"
-  MON_new_artillery_desc:0 "A relatively new concept to Mongolia, artillery guns will provide the support the army needs to protect all that matters."
-  MON_motorisation:0 "Motorisation"
-  MON_motorisation_desc:0 "Slow infantry and static warfare have never been the strongsuits of Mongolia. We thrive in maneuver and speed, and we need but modernize these tactics to apply them abroad."
-  MON_armour:0 "Heavy Horse"
-  MON_armour_desc:0 "What is a tank if not a larger, metal horse? To these countrymen, a heavier horse may be the only way to explain these beasts of war."
-  MON_tactical_innovations:0 "New Tactics"
-  MON_tactical_innovations_desc:0 "When the majority of one's tactics are derived from 13th-century conquests, it becomes clear that some modernization is in order."
-  MON_army_traditions:0 "Army Traditions"
-  MON_army_traditions_desc:0 "There are few nations with such a militaristic history as Mongolia. Once the rulers of the world, this petty state we find ourselves in is merely a stop-gap to the glory of the new Mongol Uls!"
-  MON_legacy_of_khanate:0 "Legacy of the Khanate"
-  MON_legacy_of_khanate_desc:0 "The spirit of the great Mongols of old will always be with us, sometimes literally."
-  MON_spirit_of_genghis:0 "Spirit of Genghis"
-  MON_spirit_of_genghis_desc:0 "Perhaps those Buddhists were onto something... shame that we purged them all."
-  MON_mobilize_the_steppes:0 "Mobilize the Steppes"
-  MON_mobilize_the_steppes_desc:0 "In the face of true war, every man of the steppes must be prepared to put his life on the line for the glory of communism."
 
-#Right-side political/new focuses
+
+# Right-side political/new focuses
+
   MON_buddhist_compromise:0 "Buddhism Compromise"
   MON_buddhist_compromise_desc:0 "Buddhism has played an important role in the history and culture of Mongolia for centuries. However, in recent years, there has been tension between the government and certain Buddhist sects over issues such as political influence."
   MON_religious_taxations:0 "Religious Taxation"
@@ -117,6 +97,110 @@
   MON_soviet_transportation_desc:0 "The Mongolian railway network is very underdeveloped or doesn't exist at all, without proper infrastructure our army will have an hard time fighting on the eastern front"
   MON_volunteers:0 "Mongolian Volunteers"
   MON_volunteers_desc:0 "As a socialist state, we believe in the international solidarity of the working class and the struggle against imperialism and fascism. Therefore, we will send Mongolia volunteers to support our Soviet comrades in Spain who are fighting against Franco's fascist regime."
+
+############################ Army
+
+  MON_mongolia_people_army:0 "Mongolian Peoples Army"
+  MON_mongolia_people_army_desc:0 "The Mongolian Peoples Army is the newly-established Mongolian division of the Red Army, tasked with securing the interests of international communism wherever it is threatened."
+  MON_army_modernisation:0 "Army Modernisation"
+  MON_army_modernisation_desc:0 "Firearms from the Great War hardly qualify as modern munitions. If we wish to be taken seriously, we are in desperate need of some upgrades."
+  MON_new_rifles:0 "New Rifles"
+  MON_new_rifles_desc:0 "Fully-automatic weaponry is a necessity for any modern fighting force."
+  MON_new_artillery:0 "Develop Artillery"
+  MON_new_artillery_desc:0 "A relatively new concept to Mongolia, artillery guns will provide the support the army needs to protect all that matters."
+  MON_motorisation:0 "Motorisation"
+  MON_motorisation_desc:0 "Slow infantry and static warfare have never been the strongsuits of Mongolia. We thrive in maneuver and speed, and we need but modernize these tactics to apply them abroad."
+  MON_armour:0 "Heavy Horse"
+  MON_armour_desc:0 "What is a tank if not a larger, metal horse? To these countrymen, a heavier horse may be the only way to explain these beasts of war."
+  MON_tactical_innovations:0 "New Tactics"
+  MON_tactical_innovations_desc:0 "When the majority of one's tactics are derived from 13th-century conquests, it becomes clear that some modernization is in order."
+  MON_army_traditions:0 "Army Traditions"
+  MON_army_traditions_desc:0 "There are few nations with such a militaristic history as Mongolia. Once the rulers of the world, this petty state we find ourselves in is merely a stop-gap to the glory of the new Mongol Uls!"
+  MON_legacy_of_khanate:0 "Legacy of the Khanate"
+  MON_legacy_of_khanate_desc:0 "The spirit of the great Mongols of old will always be with us, sometimes literally."
+  MON_spirit_of_genghis:0 "Spirit of Genghis"
+  MON_spirit_of_genghis_desc:0 "Perhaps those Buddhists were onto something... shame that we purged them all."
+  MON_mobilize_the_steppes:0 "Mobilize the Steppes"
+  MON_mobilize_the_steppes_desc:0 "In the face of true war, every man of the steppes must be prepared to put his life on the line for the glory of communism."
+  MON_use_soviet_tech:0 "Learn from the USSR"
+  MON_use_soviet_tech_desc:0 "Soviet technological advancements are going to be very useful for the modernisation of our army"
+  MON_medium_armor_supremacy:0 "Medium Armour Supremacy"ä
+  MON_medium_armor_supremacy_desc:0 "Soviet Medium Tanks have Firepower, Speed and Armor, all which we can use to improve our armed forces "
+  MON_appoint_morozov:0 "Appoint Morozov"
+  MON_appoint_morozov_desc:0 "We will invite Morozov Design Bureau specialists to help us design our Tanks"
+  MON_heavy_armor_supremacy:0 "Heavy Armour Supremacy"
+  MON_heavy_armor_supremacy_desc:0 "The unquestionable strength and firepower of Soviet Heavy Tanks will dominate the battlefield"
+  MON_appoint_okmo:0 "Appoint OKMO"
+  MON_appoint_okmo_desc:0 "Experimental Design Mechanical Department, or OKMO, is the lead designer of Soviet Heavy Tanks, their specialists will have a significant impact on the effectiveness of our heavy tanks"
+  MON_improved_weaponry:0 "Improved Weaponry"
+  MON_improved_weaponry_desc:0 "Soviet Union made significant advancements in the field of Weaponry of common soldier, aquiring those weapons will improve the capabilities of our infantrymen"
+  MON_release_the_horses:0 "Release the Horses"
+  MON_release_the_horses_desc:0 "Horses were the main force of the Mongolian army for thousand years, but if we want to morednise, we have to let them go and use the modern means of warfare"
+  MON_invite_soviet_military_staff:0 "Invite Soviet Military Staff"
+  MON_invite_soviet_military_staff_desc:0 "We have common goals with the Soviet Union, the expertise, the knowledge and the leadership of the Soviet Officers will improve the capabilities of our Armed Forces"
+  MON_mongolian_armory:0 "Local Designs"
+  MON_mongolian_armory_desc:0 "Despite having close ties with the Soviet Union, we are still not part of them, we have to create our own Tanks to show that we have the capabilities and knowledge of our own"
+  MON_armored_genghis_khan:0 "Modern Genghis Khan"
+  MON_armored_genghis_khan_desc:0 "Genghis Khan led his famous cavalry through steppes into europe, we can implement his tactics into modern age to achieve victories on the battlefield"
+  MON_support_artillery:0 "Support Artillery"
+  MON_support_artillery_desc:0 "Artillery bombardment will weaken the enemy positions to allow our army to advance forward"
+  MON_mongolian_tankograd:0 "Mongolian Tankograd"
+  MON_mongolian_tankograd_desc:0 "Tankograd or City of Tanks, is a city that is focused on mainly tank production, this industy concentration will allow us to produce our tanks in bigger quantities"
+  MON_infantry_devlopment:0 "Inantry Development"
+  MON_infantry_devlopment_desc:0 "Infantry is the backbone of any armed forces, we cannot let them fall behind in terms of technological modernisation"
+  MON_modern_support_warfare:0 "Modern Support Equipment"
+  MON_modern_support_warfare_desc:0 "For our Army to be effective, we have to introduce to them a modern equpment to support them in their advancements"
+  MON_mongolian_women_workers:0 "Equality at the Workplace"
+  MON_mongolian_women_workers_desc:0 "We cannot be called a modern society if we don't allow half of our population to work, our women are as much capable as our men"
+  MON_heavy_artillery:0 "Khorlooogiins Sledgehammer"
+  MON_heavy_artillery_desc:0 "We will develop a gret weapon named after our Great Leader, Khorloogiin Choibalsan, he will spread damage and destruction among the enemies of Mongolia"
+  MON_steppe_logistics:0 "Steppe Logistics"
+  MON_steppe_logistics_desc:0 "Mongolian Steppe is a unique environment, we have to modernise our Logistics to be able to operate effectively"
+  MON_mongolian_katyushas:0 "Mongolian Katyushas"
+  MON_mongolian_katyushas_desc:0 "Soviet Union developed Multiple Launch Rocket System named Katyusha, we can develop our own one to show the power of Mongolia"
+  MON_mongolian_socialist_science:0 "Socialist Science"
+  MON_mongolian_socialist_science_desc:0 "Our great scientists made massive developments for our country, we have to invest more funds into them" 
+  MON_crush_the_fascists:0 "Crush the Fascists"
+  MON_crush_the_fascists_desc:0 "The alliance with the Fascist powers was a mistake, we have to correct our mistakes and deliver a huge L to them"
+  
+# Army China branch
+
+  MON_abandon_our_roots:0 "Abandon our Roots"
+  MON_abandon_our_roots_desc:0 "Just like us, the chinese have a long history of brutal conflicts and war. However, in the past centuries our nation has largely been lying dormant, resulting in a lack of experience and know-how on how to fight a modern war. If we want to combat these deficiencies, we should look radically restructure our army and southwards and copy battle-tested tactics, equipment and doctrines from the chinese."
+  MON_invite_chinese_exiles:0 "Invite Chinese Exiles"
+  MON_invite_chinese_exiles_desc:0 "After the chinese defeat in the Sino-Japanese war, there are many experienced officers and soldiers who wish to flee their country. If we grant them asylum in our nation, it will greatly assist us in our army expansion efforts"
+  MON_send_observers:0 "Send Military Observers"
+  MON_send_observers_desc:0 "The ongoing war in china presents a perfect opportunity to study doctrines, equipment and gain valuable combat experience. We should immediatly dispatch selected military personal in order to take advantage of the situation."
+  MON_modernise_conscription:0 "Modernise Conscription"
+  MON_modernise_conscription_desc:0 "Our conscription system is outdated and inefficient and in dire need of an overhaul. If we modernise it properly, we can boost army recruitment signifcantly."
+  MON_full_sinicization:0 "Full Sinicization"
+  MON_full_sinicization_desc:0 "Our army is filled with chinese veterans, our generals were observers in china, and our doctrine shaped by the war in the south. We have truely abandoned our ancestrial roots, but in the process we have gained something far more valuable. A battle hardened army, ready to fight and die for our cause."
+  MON_study_chinese_tactics:0 "Study Chinese Tactics"
+  MON_study_chinese_tactics_desc:0 "The chinese have mastered guerilla tactics due to decades of ongoing war. By studying their tactics, we can achieve similar results without having to pay the price."
+  MON_adapt_terrain:0 "Adapt to our terrain"
+  MON_adapt_terrain_desc:0 "Any attack threatening our great nation will likely come from the west, trying to destroy our socialist brother. We must therefore adapt and train our men to fight in the terrain of the Soviet Union."
+  MON_send_volunteers:0 "Send Volunteers"
+  MON_send_volunteers_desc:0 "Observers and attaches are simply no longer enough. In order to gain invaluable experience and aid our brothers in the south, we must send our own men to the frontlines."
+  MON_invite_chinese_veterans:0 "Invite Chinese Veterans"
+  MON_invite_chinese_veterans_desc:0 "The ongoing war in china has produced many veterans disillusioned with their government and military leadership. By granting them asylum, we can bolster our ranks with experienced, seasoned men forged in the flames of a brutal war."
+  MON_open_borders:0 "Open Borders"
+  MON_open_borders_desc:0 "If we open our borders, we can use the steady influx of refugees to supplement our otherwise lacking manpower reserves. While there will be polticial backlash and resistance from our people, these are necissary steps in  finalising our ongoing army reforms and fully adopting the chinese model."
+  MON_study_chinese_equipment:0 "Study Chinese Equipment"
+  MON_study_chinese_equipment_desc:0 "The Chinese have invested considerable resources into mastering the art of weapons manufacturing. We must learn from their experiences and mistakes in order to catapult our army into the modern age."
+  MON_leftover_equipment:0 "Raid Weapons Caches"
+  MON_leftover_equipment_desc:0 "There are lots of unused weapons caches still left from the war. With the intel recieved from the exiles in our nation, we can locate them and make use the materials."
+  MON_new_designs:0 "New Designs"
+  MON_new_designs_desc:0 "While our old weapon designs have proven well in the past years, they are beginning to show t heir age. A new generation of weapons must be developed in order for us to be ready for the coming wars."
+  MON_simplify_production:0 "Simplify Production"
+  MON_simplify_production_desc:0 "By merging various plants and simplifying our blueprints, we can drastically increase output in order to properly arm our increasingly growing army."
+  
+  
+  
+  
+  
+  
+  
+
 
   #### EVENTS ####
   mongolia.1.t:0 "Mongolia Calls for Mongol Unity" #pretty much all of these events seem outdated
@@ -161,6 +245,20 @@
   MON_buddhist_compromise_idea:0 "Buddhist Cooperation"
   MON_religious_taxation:0 "Religious Taxations"
   MON_nomadic_war_idea:0 "Nomadic Warriors"
+  MON_pan_mongolism:0 "Pan Mongolism"
+  MON_unite_the_steppes:0 "Mobilize the Steppes"
+  MON_modernise_army:0 "Army Modernisation"
+  MON_modernise_army:0 "Army Modernisation"
+  MON_army_stagnation:0 "Army Stagnation"
+  MON_military_observers:0 "Military Observers in China"
+  MON_open_borders:0 "Open Borders"
+  MON_modernised_conscription:0 "Modernised Conscription System"
+  MON_simplify_production:0 "Simplify Production"
+  MON_OKMO: "OKMO"
+  MON_Morozov:0 "Morozov"
+  MON_modernise_army:0 "Army Modernisation"
+  MON_send_volunteers:0 "Volunteers to China"
+
 
   #### CHARACTERS ####
   MON_buyannmeh:0 "Genghis Force Ghost"
@@ -173,6 +271,14 @@
 
   #### TOOLTIPS ####
   MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
+  MON_adaptable_army:0 "Enables §HAdaptable Army§!\n§HInfantry:\n    Forests§!\n      Defense: §G+5%§!\n      Movement: §G+5%§!\n "
+
+  ##### MASS MOB TOOLTIPS ####
+
+  MON_chi_tt:0 "§RThis Focus will automatically be bypassed after the war in China has ended§!"
+
+
+
 
   #### PROPAGANDA ####
   MON_propaganda_transport:0 "Transport is the Sibling of the Red Army"

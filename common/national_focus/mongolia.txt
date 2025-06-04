@@ -334,17 +334,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 329
-			add_state_core = 618
-			add_state_core = 760
-			add_state_core = 759
-			add_state_core = 287
-			add_state_core = 619
-			add_state_core = 617
-			add_state_core = 618
-			add_state_core = 757
-			add_state_core = 758
-			add_state_core = 322
+			add_ideas = MON_pan_mongolism
 		}
 	}
 
@@ -359,7 +349,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = MON_mobilize_steppes
+			add_ideas = MON_unite_the_steppes
 		}
 	}
 	
@@ -709,17 +699,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 329
-			add_state_core = 618
-			add_state_core = 760
-			add_state_core = 759
-			add_state_core = 287
-			add_state_core = 619
-			add_state_core = 617
-			add_state_core = 618
-			add_state_core = 757
-			add_state_core = 758
-			add_state_core = 322
+			add_ideas = MON_unite_the_steppes
 		}
 	}
 
@@ -1455,123 +1435,60 @@ focus_tree = {
 
   # Army
 
-	focus = {
+		focus = {
 		id = MON_mongolia_people_army
 		icon = GFX_SOV_red_army
-		x = 25
+		x = 35
 		y = 0
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 50
+			add_political_powerä = 50
 		}
 	}
+
+	# Army Modernisation
 
 	focus = {
 		id = MON_army_modernisation
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = MON_mongolia_people_army }
-		x = -2
+		mutually_exclusive = { focus = MON_army_traditions }
+		mutually_exclusive = { focus = MON_abandon_our_roots }
+		x = -8
 		y = 1
 		relative_position_id = MON_mongolia_people_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
 		}
 
 		completion_reward = {
-			army_experience = 100
+			swap_ideas = {
+				remove_idea = MON_army_stagnation
+				add_idea = MON_modernise_army
+}
 		}
 	}
-	
+
 	focus = {
-		id = MON_new_rifles
-		icon = GFX_goal_generic_small_arms
+		id = MON_use_soviet_tech
+		icon = GFX_SOV_mechanized_wave
 		prerequisite = { focus = MON_army_modernisation }
-		x = -1
+		mutually_exclusive = { focus = MON_mongolian_armory }
+		x = -4
 		y = 1
 		relative_position_id = MON_army_modernisation
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 27
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = MONgaria
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-	
-	focus = {
-		id = MON_new_artillery
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = MON_new_rifles }
-		x = 0
-		y = 1
-		relative_position_id = MON_new_rifles
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 27
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = MONgaria
-				bonus = 1
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = MON_motorisation
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = MON_army_modernisation }
-		x = 1
-		y = 1
-		relative_position_id = MON_army_modernisation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 27
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = MONgaria
-				bonus = 0.5
-				uses = 2
-				category = cat_mechanized_equipment
-			}
-		}
-	}
-	
-	focus = {
-		id = MON_armour
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = MON_motorisation }
-		x = 0
-		y = 1
-		relative_position_id = MON_motorisation
-
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -1586,72 +1503,375 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = MON_tactical_innovations
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = MON_armour }
-		prerequisite = { focus = MON_new_artillery }
-		x = -1
-		y = 1
-		relative_position_id = MON_armour
 
-		cost = 10
+	focus = {
+		id = MON_medium_armor_supremacy
+		icon = GFX_SOV_armour_development
+		prerequisite = { focus = MON_use_soviet_tech }
+		mutually_exclusive = { focus = MON_heavy_armor_supremacy }
+		x = -2
+		y = 1
+		relative_position_id = MON_use_soviet_tech
+
+		cost = 5
+
+		available = {
+		}
 
 		ai_will_do = {
 			factor = 27
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+				add_tech_bonus = {
 				name = MONgaria
-				cost_reduction = 0.40
-				uses = 3
-				category = land_doctrine
+				ahead_reduction = 0.5
+				bonus = 0.75
+				uses = 1
+				category = cat_medium_armor
 			}
 		}
 	}
 
 	focus = {
-		id = MON_volunteers
-		icon = GFX_goal_generic_position_armies
+		id = MON_appoint_morozov
+		icon = GFX_SOV_choose_morozov
+		prerequisite = { focus = MON_medium_armor_supremacy }
 		x = 0
 		y = 1
-		cost = 3
-		
+		relative_position_id = MON_medium_armor_supremacy
 
-		prerequisite = { focus = MON_mongolia_people_army }
+		cost = 5
 
-		available_if_capitulated = yes
-		
-		relative_position_id = MON_mongolia_people_army
-		
-		available = {
-
-		}
-		
 		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			
+			factor = 27
 		}
 
 		completion_reward = {
-			add_ideas = { MON_volunteers_idea }
+			add_ideas = MON_Morozov
 		}
 	}
+
+	focus = {
+		id = MON_heavy_armor_supremacy
+		icon = GFX_SOV_armour_development
+		prerequisite = { focus = MON_use_soviet_tech }
+		mutually_exclusive = { focus = MON_medium_armor_supremacy }
+		x = 0
+		y = 1
+		relative_position_id = MON_use_soviet_tech
+
+		cost = 5
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+			name = MONgaria
+			ahead_reduction = 0.5
+			bonus = 0.75
+			uses = 1
+			category = cat_heavy_armor
+			}
+		}
+	}
+
+	focus = {
+		id = MON_appoint_okmo
+		icon = GFX_SOV_choose_okmo
+		prerequisite = { focus = MON_heavy_armor_supremacy }
+		x = 0
+		y = 1
+		relative_position_id = MON_heavy_armor_supremacy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = MON_OKMO
+		}
+	}
+
+	focus = {
+		id = MON_improved_weaponry
+		icon = GFX_SOV_infantry_development
+		prerequisite = { focus = MON_use_soviet_tech }
+		x = 2
+		y = 1
+		relative_position_id = MON_use_soviet_tech
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.75
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_release_the_horses
+		icon = GFX_SOV_modernize_the_cavalry
+		prerequisite = { focus = MON_improved_weaponry }
+		x = 0
+		y = 1
+		relative_position_id = MON_improved_weaponry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_ideas = SOV_new_cavalry
+		}
+	}
+
+	focus = {
+		id = MON_invite_soviet_military_staff
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = MON_release_the_horses }
+		x = 0
+		y = 1
+		relative_position_id = MON_release_the_horses
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			create_field_marshal = {
+				name = "Altan Khan"
+				picture = "altan_kahn.dds"
+				traits = { offensive_doctrine }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Grigory Semyonov"
+				picture = "portrait_SOV_grigory_semyonov.dds"
+				traits = { panzer_leader panzer_expert }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			add_ideas = SOV_new_officers
+		}
+	}
+
+	focus = {
+		id = MON_mongolian_armory
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = MON_army_modernisation }
+		mutually_exclusive = { focus = MON_use_soviet_tech }
+		x = 2
+		y = 1
+		relative_position_id = MON_army_modernisation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+
+	focus = {
+		id = MON_armored_genghis_khan
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = MON_mongolian_armory }
+		x = -1
+		y = 1
+		relative_position_id = MON_mongolian_armory
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				ahead_reduction = 2
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+	}
+
+	focus = {
+		id = MON_support_artillery
+		icon = GFX_SOV_artillery_development
+		prerequisite = { focus = MON_armored_genghis_khan }
+		x = 0
+		y = 1
+		relative_position_id = MON_armored_genghis_khan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = MON_mongolian_tankograd
+		icon = GFX_SOV_tankograd
+		prerequisite = { focus = MON_support_artillery }
+		x = 0
+		y = 1
+		relative_position_id = MON_support_artillery
+
+		cost = 5
+
+		available = {
+			has_war_with = GER
+			SOV = {
+				surrender_progress > 0.24
+			}
+		}
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = SOV_tankograd_idea
+		}
+	}
+
+	focus = {
+		id = MON_infantry_devlopment
+		icon = GFX_SOV_infantry_development
+		prerequisite = { focus = MON_mongolian_armory }
+		x = 1
+		y = 1
+		relative_position_id = MON_mongolian_armory
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_modern_support_warfare
+		icon = GFX_SOV_production_targets
+		prerequisite = { focus = MON_infantry_devlopment }
+		x = 0
+		y = 1
+		relative_position_id = MON_infantry_devlopment
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 4
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_mongolian_women_workers
+		icon = GFX_SOV_goal_women
+		prerequisite = { focus = MON_modern_support_warfare }
+		x = 0
+		y = 1
+		relative_position_id = MON_modern_support_warfare
+
+		cost = 5
+
+		available = {
+			has_war_with = GER
+			date > 1942.1.1
+		}
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = { SOV_women_idea }
+		}
+	}
+	
+	# Army Traditions
 	
 	focus = {
 		id = MON_army_traditions
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = MON_mongolia_people_army }
-		x = 2
+		mutually_exclusive = { focus = MON_army_modernisation }
+		mutually_exclusive = { focus = MON_abandon_our_roots }
+		x = 0
 		y = 1
 		relative_position_id = MON_mongolia_people_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -1659,6 +1879,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 100
+			remove_ideas = MON_army_stagnation
 		}
 	}
 	
@@ -1666,11 +1887,11 @@ focus_tree = {
 		id = MON_legacy_of_khanate
 		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = MON_army_traditions }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = MON_army_traditions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -1689,16 +1910,142 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = MON_new_rifles
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = MON_legacy_of_khanate }
+		x = -1
+		y = 1
+		relative_position_id = MON_legacy_of_khanate
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_steppe_logistics
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = MON_new_rifles }
+		x = 0
+		y = 1
+		relative_position_id = MON_new_rifles
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_new_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = MON_legacy_of_khanate }
+		x = 1
+		y = 1
+		relative_position_id = MON_legacy_of_khanate
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = MON_heavy_artillery
+		icon = GFX_SOV_stalins_hammer
+		prerequisite = { focus = MON_new_artillery }
+		x = 0
+		y = 1
+		relative_position_id = MON_new_artillery
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = art_bonus
+				bonus = 0.75
+				uses = 2
+				category = heavy_artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_tactical_innovations
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = MON_steppe_logistics }
+		prerequisite = { focus = MON_heavy_artillery }
+		x = 1
+		y = 1
+		relative_position_id = MON_steppe_logistics
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.4
+				uses = 3
+				technology = grand_mechanized_offensive
+				technology = assault_concentration
+				technology = branch_interoperation
+				technology = assault_breakthrough
+				technology = armored_operations
+				technology = c3i_theory
+			}
+		}
+	}
 	
 	focus = {
 		id = MON_spirit_of_genghis
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = MON_army_traditions }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = MON_army_traditions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -1707,7 +2054,514 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MON_buyannmeh
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 
+	focus = {
+		id = MON_mongolian_katyushas
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MON_spirit_of_genghis }
+		x = -1
+		y = 1
+		relative_position_id = MON_spirit_of_genghis
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				ahead_reduction = 0.5
+				uses = 1
+				technology = motorised_anti_air
+			}
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				ahead_reduction = 0.5
+				uses = 1
+				technology = motorized_rocket_unit
+			}
+		}
+	}
+
+	focus = {
+		id = MON_mongolian_socialist_science
+		icon = GFX_SOV_progress_cult
+		prerequisite = { focus = MON_spirit_of_genghis }
+		x = 1
+		y = 1
+		relative_position_id = MON_spirit_of_genghis
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = progress_cult_focus
+		}
+	}
+
+	focus = {
+		id = MON_crush_the_fascists
+		icon = GFX_SOV_drive_out_the_fascists
+		prerequisite = { focus = MON_mongolian_socialist_science }
+		x = 0
+		y = 1
+		relative_position_id = MON_mongolian_socialist_science
+
+		cost = 5
+
+		available = {
+			has_war_with = GER
+			date > 1942.1.1
+		}
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_invade_germany_idea
+				days = 120
+			}
+		}
+	}
+	
+	# Mass Mob Branch
+	
+	focus = {
+		id = MON_abandon_our_roots
+		icon = GFX_SOV_modernize_the_cavalry
+		prerequisite = { focus = MON_mongolia_people_army }
+		mutually_exclusive = { focus = MON_army_traditions }
+		mutually_exclusive = { focus = MON_army_modernisation }
+		x = 9
+		y = 1
+		relative_position_id = MON_mongolia_people_army
+
+		cost = 5 
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_political_power = -150
+			add_stability = -0.15
+			remove_ideas = MON_army_stagnation
+		}
+	}
+	
+	focus = {
+		id = MON_invite_chinese_exiles
+		icon = GFX_SOV_operation_luna
+		prerequisite = { focus = MON_abandon_our_roots }
+		x = -2
+		y = 1
+		relative_position_id = MON_abandon_our_roots
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			add_manpower = 100000
+			create_field_marshal = {
+				name = "Chiang Kai Shek"
+				portrait_path = "gfx/leaders/MON/Portrait_Chiang_Kai_Shek.dds"
+				traits = { trait_cautious harsh_leader defensive_doctrine }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 5
+				planning_skill = 1
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Wei Lihuang"
+				portrait_path = "gfx/leaders/MON/Portrait_wei_lihuang.dds"
+				traits = { infantry_officer hill_fighter}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Zhang Xueliang"
+				portrait_path = "gfx/leaders/JAP/Portrait_Japan_Yoshijiro_Umezu.dds"
+				traits = { trickster }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_send_observers
+		icon = GFX_SOV_army_revision_board
+		prerequisite = { focus = MON_abandon_our_roots }
+		x = 2
+		y = 1
+		relative_position_id = MON_abandon_our_roots
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			CHI = { has_war_with = JAP }
+		}
+		
+		bypass = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = MON_chi_tt
+			add_ideas = MON_military_observers
+		}
+	}
+	
+	focus = {
+		id = MON_modernise_conscription
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = MON_invite_chinese_exiles }
+		x = -2
+		y = 1
+		relative_position_id = MON_invite_chinese_exiles
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			add_ideas = MON_modernised_conscription
+		}
+	}
+	
+	focus = {
+		id = MON_open_borders
+		icon = GFX_SOV_quotas_must_be_fulfilled
+		prerequisite = { focus = MON_modernise_conscription }
+		x = 0
+		y = 2
+		relative_position_id = MON_modernise_conscription
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			add_ideas = MON_open_borders
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {
+		id = MON_adapt_terrain
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = MON_modernise_conscription }
+		x = 1
+		y = 1
+		relative_position_id = MON_modernise_conscription
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 27
+		}
+
+
+		completion_reward = {
+			MON_khorloogiin_choibalsan = {
+				add_trait = { trait = ranger }
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_study_chinese_equipment
+		icon = GFX_SOV_goal_operation_zet
+		prerequisite = { focus = MON_abandon_our_roots}
+		x = 0
+		y = 2
+		relative_position_id = MON_abandon_our_roots
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.75
+				uses = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_leftover_equipment
+		icon = GFX_SOV_production_targets
+		prerequisite = { focus = MON_study_chinese_equipment }
+		x = -1
+		y = 1
+		relative_position_id = MON_study_chinese_equipment
+
+		cost = 2
+		
+		available = {
+			NOT = { country_exists = CHI }
+		}
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 15000
+				producer = CHI
+			}
+
+			add_equipment_to_stockpile = {
+
+				type = horse_equipment_0
+				amount = 4000
+				producer = CHI
+			}
+
+			add_equipment_to_stockpile = {
+
+				type = squad_equipment_0
+				amount = 2500
+				producer = CHI
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = support_equipment_1
+				amount = 400
+				producer = CHI
+			}
+
+			add_equipment_to_stockpile = {
+
+				type = motorized_equipment_1
+				amount = 200
+				producer = CHI
+			}
+
+			add_equipment_to_stockpile = {
+
+				type = radio_equipment_0
+				amount = 200
+				producer = CHI
+			}
+
+			
+		}
+	}
+	
+	focus = {
+		id = MON_new_designs
+		icon = GFX_SOV_infantry_development
+		prerequisite = { focus = MON_study_chinese_equipment }
+		x = 1
+		y = 1
+		relative_position_id = MON_study_chinese_equipment
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.25
+				ahead_reduction = 0.5
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_simplify_production
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = MON_leftover_equipment focus = MON_new_designs }
+		x = 0
+		y = 2
+		relative_position_id = MON_study_chinese_equipment
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = MON_simplify_production
+		}
+	}
+	
+		focus = {
+		id = MON_study_chinese_tactics
+		icon = GFX_SOV_protect_the_east
+		prerequisite = { focus = MON_send_observers }
+		x = 2
+		y = 1
+		relative_position_id = MON_send_observers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			CHI = { has_war_with = JAP }
+		}
+		
+		bypass = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = MON_chi_tt
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.4
+				uses = 3
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_send_volunteers
+		icon = GFX_SOV_stakhonovite
+		prerequisite = { focus = MON_study_chinese_tactics }
+		x = -1
+		y = 1
+		relative_position_id = MON_study_chinese_tactics
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			CHI = { has_war_with = JAP }
+		}
+		
+		bypass = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = MON_chi_tt
+			add_ideas = MON_send_volunteers
+		}
+	}
+	
+	focus = {
+		id = MON_invite_chinese_veterans
+		icon = GFX_SOV_red_army
+		prerequisite = { focus = MON_study_chinese_tactics }
+		x = 0
+		y = 2
+		relative_position_id = MON_study_chinese_tactics
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+		
+		available = {
+			CHI = { has_war_with = JAP }
+		}
+		
+		bypass = {
+			NOT = { country_exists = CHI }
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = MON_chi_tt
+			army_experience = 50
+			add_manpower = 50000
+		}
+	}
+	
+	focus = {
+		id = MON_full_sinicization
+		icon = GFX_focus_chi_whampoa_military_academy
+		prerequisite = { focus = MON_open_borders }
+		prerequisite = { focus = MON_invite_chinese_veterans }
+		x = 0
+		y = 1
+		relative_position_id = MON_simplify_production
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+				add_ideas = MON_full_sinicization
+		}
+	}
 }		
