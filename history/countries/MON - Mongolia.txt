@@ -1,4 +1,4 @@
-﻿capital = 330
+capital = 330
 
 oob = "MON_1936"
 
@@ -17,6 +17,8 @@ add_ideas = {
 	limited_conscription
 	MON_collectivisation_1
 	MON_nomad_1
+	peacetime_training_idea
+	MON_army_stagnation
 }
 
 set_variable = { mon_poster_center_icon_frame = 1 }
@@ -34,8 +36,6 @@ set_popularities = {
 	communism = 60
 	neutrality = 40
 }
-
-add_ideas = peacetime_training_idea
 
 recruit_character = MON_khorloogiin_choibalsan
 recruit_character = MON_tong_shangzhi
