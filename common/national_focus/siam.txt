@@ -943,7 +943,18 @@ focus_tree = {
 			add_state_core = 434
 			add_state_core = 324
 			add_state_core = 994
-           
+			add_state_core = 996
+			add_state_core = 997
+           	add_state_core = 998
+			add_state_core = 990
+			add_state_core = 993
+			add_state_core = 999
+			add_state_core = 995
+
+
+
+
+
 		}
 	}
 
