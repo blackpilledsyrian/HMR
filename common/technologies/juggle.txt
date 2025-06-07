@@ -159,45 +159,6 @@ technologies = {
     }
 	
 
-	juggle_naval = {
-		research_cost = 0
-        start_year = 1936
-        on_research_complete = {
-            hidden_effect = {
-                set_technology = {
-                    juggle_naval= 0
-                }
-            }
-        }
-        folder = {
-            name = mtgnaval_folder
-            position = { x = 4 y = 10 }
-        }
-		categories = {}
-		ai_will_do = {
-			factor = 0
-		}
-    }
-	
-	juggle_mtgnaval = {
-		research_cost = 0
-        start_year = 1936
-        on_research_complete = {
-            hidden_effect = {
-                set_technology = {
-                    juggle_mtgnaval = 0
-                }
-            }
-        }
-        folder = {
-            name = mtgnaval_support_folder
-            position = { x = 6 y = 6 }
-        }
-		categories = {}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	
 	juggle_air = {
 		research_cost = 0

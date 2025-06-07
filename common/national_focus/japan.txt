@@ -3514,7 +3514,7 @@
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 500
+					amount = 1000
 				}
 			}
 		}

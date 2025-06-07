@@ -4161,18 +4161,9 @@ SOV_volunteers_in_china = {
 				has_government = communism
 			}
 			
-			equipment_bonus = {
-			
-				armor = {
-					build_cost_ic = -0.10
-					reliability = -0.05
-
-				}
-			}	
-			
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.05
+				local_resources_factor = 0.1
 		
 			}
             
